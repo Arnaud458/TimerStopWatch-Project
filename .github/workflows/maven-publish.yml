@@ -37,7 +37,7 @@ jobs:
     - name: Generatequalityreport
       env:
         SONAR_TOKEN: ${{secrets.TokenSP}}
-        SONAR_HOST_URL: ${{https://sonarcloud.io}}
+        SONAR_HOST_URL: https://sonarcloud.io
       run: >
         mvn −B verify org.sonarsource.scanner.maven:sonar−maven−plugin:sonar
         −Dsonar.host.url=https://sonarcloud.io
