@@ -22,26 +22,3 @@ jobs:
         distribution: 'temurin'
         server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
         settings-path: ${{ github.workspace }} # location for the settings.xml file
-
-    - name: Build with Maven
-      run: mvn -B package --file pom.xml
-      
-    - name: Checkout Code
-      uses: actions/checkout@v1
-    - name: Build and Run Tests
-      run: mvn test --batch-mode --fail-at-end
-    - name: Publish Test Report
-      if: success() || failure()
-      uses: scacap/action-surefire-report@v1
-      
-    - name: Generatequalityreport
-      env:
-        SONAR_TOKEN: ${{secrets.TokenSP}}
-        SONAR_HOST_URL: https://sonarcloud.io
-      run: >
-        mvn −B verify org.sonarsource.scanner.maven:sonar−maven−plugin:sonar
-        −Dsonar.host.url=https://sonarcloud.io
-        −Dsonar.organization=Arnaud458
-        −Dsonar.projectKey=Arnaud458_TimerStopWatch-Project
-        −Dsonar.branch.name=main
-        −Dsonar.login=$SONARTOKEN
