@@ -40,9 +40,9 @@ jobs:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
       run: >
-        mvn −B verify org.sonarsource.scanner.maven:sonar−maven−plugin:sonar
-        −Dsonar.host.url=https://sonarcloud.io
-        −Dsonar.organization=Arnaud458
-        −Dsonar.projectKey=arnaud458_timerstopwatch-project
-        −Dsonar.branch.name=main
-        −Dsonar.login=$SONAR_TOKEN
+        mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
+        -Dsonar.host.url=https://sonarcloud.io
+        -Dsonar.organization=Arnaud458
+        -Dsonar.projectKey=arnaud458_timerstopwatch-project
+        -Dsonar.branch.name=main
+        -Dsonar.login=$SONAR_TOKEN
