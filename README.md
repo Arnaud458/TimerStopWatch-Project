@@ -1,4 +1,4 @@
-Code quality: ![Maven Build](https://github.com/tommens/calculator-cucumber/actions/workflows/maven.yml/badge.svg)
+Code quality: [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=arnaud458_timerstopwatch-project&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=arnaud458_timerstopwatch-project)
 
 # TimerStopWatch-Project
 pouet
