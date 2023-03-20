@@ -42,7 +42,7 @@ jobs:
       run: >
         mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
         -Dsonar.host.url=https://sonarcloud.io
-        -Dsonar.organization=Arnaud458
+        -Dsonar.organization=arnaud458
         -Dsonar.projectKey=arnaud458_timerstopwatch-project
         -Dsonar.branch.name=main
         -Dsonar.login=$SONAR_TOKEN
