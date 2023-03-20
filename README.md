@@ -1,7 +1,6 @@
 Code quality: [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=arnaud458_timerstopwatch-project&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=arnaud458_timerstopwatch-project)
 
 # TimerStopWatch-Project
-pouet
 Java implementation of a statechart with Timer and Stopwatch functionality.
 This repository contains a simple example used for teaching purposes by Tom Mens at the University of Mons.
 The example is an event-based application for a timer and stopwatch. It can be controlled through 3 buttons/events.
